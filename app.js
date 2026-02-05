@@ -1,3 +1,12 @@
 const express = require('express');
 const app = express();
-const PORT = 3000;
+const port = 3000;
+
+app.get('/', (reqq, res) => {
+    res.send('Server del mio Blog')
+})
+
+app.listen(port, () => {
+    console.log(`Example app listening on port ${port}`);
+
+})
