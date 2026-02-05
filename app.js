@@ -39,6 +39,10 @@ app.get('/', (req, res) => {
     res.send('Server del mio Blog')
 })
 
+app.get('/bacheca', (req, res) => {
+    res.json(posts);
+})
+
 app.listen(port, () => {
     console.log(`Example app listening on port ${port}`);
 
