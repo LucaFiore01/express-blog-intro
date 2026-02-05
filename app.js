@@ -2,6 +2,9 @@ const express = require('express');
 const app = express();
 const port = 3000;
 
+// Configurazione asset statici
+app.use(express.static('public'));
+
 const posts = [
     {
         titolo: "Ciambellone - La ricetta classica",
